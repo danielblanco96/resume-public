@@ -1,0 +1,168 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{First Name} \headerlastnamestyle{Surname} \\
+	\vspace{2mm}
+	{\hspace{0.8cm}\faEnvelope\ email@gmail.com}  |  {\faMobile\ (+34) 999999999}  |  {\faMapMarker\ City, Country} 
+	\newline {\faLink\ \href{https://www.linkedin.com/in/your-linkedin-page/}{https://www.linkedin.com/in/your-linkedin-page/}}
+\end{center}
+
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Languages:  & {\skill{ Java, JavaScript, TypeScript, SQL, HTML, CSS}} \\
+		Frameworks:  & {\skill{ Spring, Angular.}} \\
+		Databases:  & {\skill{ MySQL, PostgreSQL (with PostGIS module), Neo4j, Oracle, SQLite.}} \\
+		Technologies / Tools: \hspace{0.05cm} & {\skill{ Docker, Docker Swarm, Jenkins, RabbitMQ, Kafka, SonarQube, Maven, npm, Git.}} \\
+		Practices:  & {\skill{ Agile, Scrum, SOLID Principles, Test-Driven Development, Code Reviews.}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+\vspace{-7mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Software Engineer}
+	{Company name}
+	{City, Country}
+	{Date From – Date To}
+	{\begin{cvitems}
+		\vspace{0.5mm}
+		\item {Built a real-time monitoring system for the devices that the company has in hundreds of hotels around the world. Kafka, Flink and a graph database (Neo4j) deployed in a Docker Swarm cluster.}
+		\item {Improved the algorithm that processes the status of the hotels given their devices\textquotesingle{} parameters, reducing 95\% of the processing time.}
+		\item {Implemented a solution to centralize the communications with all the different property management systems (PMS). With it, we got rid of duplicate code that we had in multiple platforms that need to interact with hotels.}
+		\end{cvitems}}
+
+	\cventry
+	{Software Engineer}
+	{Company Name}
+	{City, Country}
+	{Date From – Date To}
+	{\begin{cvitems}
+		\vspace{0.5mm}
+		\item {Led a team of five people to build a water quality analysis platform. Drones and USVs collected the water samples.}
+		\item {Designed and developed an algorithm to determine the best sea route and the estimated time for USVs to collect all the water samples they need.}
+		\item {Built a collaborative toponymy platform with over 1.5 million place names and their metadata.}
+		\item {Suggested and implemented a CI / CD methodology using Jenkins and SonarQube.}
+		\end{cvitems}}
+
+	\cventry
+	{Web Developer (Internship)}
+	{Company Name}
+	{City, Country}
+	{Date From – Date To}
+	{\begin{cvitems}
+		\vspace{0.5mm}
+		\item {Developed two websites using PHP, HTML, CSS, JavaScript and MySQL.}
+		\end{cvitems}}
+\end{cventries}
+
+\cvsection{Projects}
+\begin{cventries}
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Crossbar Challenge \vspace{-5mm}}
+	{Unity, C\#, Blender \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+		\item {Football game with almost 100K downloads in the play store. 
+		\newline \faLink\ \href{https://play.google.com/store/apps/details?id=com.DABCStudios.CrossbarChallenge}{https://play.google.com/store/apps/details?id=com.DABCStudios.CrossbarChallenge}}
+	\end{cvsectionnormaltext}}
+
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Egg Incubator \vspace{-5mm}}
+	{Java, Python, C++ (Qt Framework), Android, Raspberry Pi \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+		\item{Monitoring and control system for an egg incubator, using a Raspberry Pi. Controlled by an Android app, it is possible to set up the target temperature / humidity and other parameters. Also able to perform manual operations, activating / deactivating the relays to connect lights, resistances, open the door, etc.}
+	\end{cvsectionnormaltext}}	
+	
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Clean Code and SOLID Principles course \vspace{-5mm}}
+	{}
+	{}
+	{\begin{cvsectionnormaltext}
+		\item{Published a course on how to write cleaner code.
+		\newline \faLink\ \href{https://www.udemy.com/course/principios-solid-y-clean-code-escribe-codigo-de-calidad/}{https://www.udemy.com/course/principios-solid-y-clean-code-escribe-codigo-de-calidad/}}
+	\end{cvsectionnormaltext}}
+	
+	\vspace{-5mm}
+	
+\end{cventries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{8mm}
+\cvsection{Education}
+\begin{cventries}
+	\vspace{-3mm}
+	\cventry
+	{}
+	{University of Santiago de Compostela \vspace{-5mm}}
+	{Santiago de Compostela, Spain \vspace{-5mm}}
+	{Date From – Date To \vspace{-5mm}}
+	{\begin{cvsectionnormaltext} 
+		\item{BSc in Computer Science (8.2/10)}
+	\end{cvsectionnormaltext}}
+\end{cventries}
+
+\end{document}
